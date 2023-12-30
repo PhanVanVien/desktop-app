@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" stylesheets="@../Styles/Asset.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.beetechdesktopapp.Controllers.AssetController">
+    <AnchorPane layoutX="33.0" layoutY="33.0" prefHeight="100.0" prefWidth="850.0" styleClass="header_dashboard" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Text layoutX="65.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="page_title" text="Asset" wrappingWidth="127.81705856323242" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="28.0" />
+    </AnchorPane>
+    <Text fx:id="username_txt" layoutX="35.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="username" text="Hi, Beetech" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="115.0" />
+    <Label fx:id="date_lbl" layoutX="729.0" layoutY="112.0" styleClass="date-lbl" text="Today, 2023-08-10" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="112.0" />
+    <HBox layoutX="46.0" layoutY="10.0" prefHeight="50.0" prefWidth="232.0" styleClass="function_container" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="160.0">
+        <children>
+            <Button id="connect-button" fx:id="connectButton" mnemonicParsing="false" prefHeight="29.0" prefWidth="84.0" styleClass="button_custom" text="Connect">
+                <graphic>
+                    <FontAwesomeIconView glyphName="BLUETOOTH" size="15" />
+                </graphic>
+            </Button>
+            <Button id="read button" fx:id="readButton" mnemonicParsing="false" prefHeight="29.0" prefWidth="68.0" styleClass="button_custom" text="Read">
+                <graphic>
+                    <FontAwesomeIconView glyphName="BARCODE" size="15" />
+                </graphic>
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+            </Button>
+        </children>
+    </HBox>
+    <VBox fx:id="step1VBox" layoutX="187.0" layoutY="176.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="210.0">
+        <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+                <children>
+                    <AnchorPane prefHeight="377.0" prefWidth="810.0" stylesheets="@../Styles/FormInput.css">
+                        <HBox prefHeight="50.0" prefWidth="810.0" styleClass="container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <Label styleClass="step_title" text="Basic Info" textFill="#edae1f">
+                                <graphic>
+                                    <FontAwesomeIconView fill="#edae1f" glyphName="CIRCLE" />
+                                </graphic>
+                            </Label>
+                            <Line endX="100.0" strokeWidth="2.0">
+                                <HBox.margin>
+                                    <Insets top="8.0" />
+                                </HBox.margin>
+                            </Line>
+                            <Label layoutX="10.0" layoutY="10.0" styleClass="step_title" text="Depreciation Info">
+                                <graphic>
+                                    <FontAwesomeIconView glyphName="CIRCLE" />
+                                </graphic>
+                            </Label>
+                            <Line endX="100.0" layoutX="178.0" layoutY="11.0" strokeWidth="2.0">
+                                <HBox.margin>
+                                    <Insets top="8.0" />
+                                </HBox.margin>
+                            </Line>
+                            <Label layoutX="38.0" layoutY="10.0" styleClass="step_title" text="Maintenance Info">
+                                <graphic>
+                                    <FontAwesomeIconView glyphName="CIRCLE" />
+                                </graphic>
+                            </Label>
+                            <Line startX="100.0" strokeWidth="2.0">
+                                <HBox.margin>
+                                    <Insets top="8.0" />
+                                </HBox.margin>
+                            </Line>
+                            <Label layoutX="66.0" layoutY="10.0" styleClass="step_title" text="Preview">
+                                <graphic>
+                                    <FontAwesomeIconView glyphName="CIRCLE" />
+                                </graphic>
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                        <VBox layoutY="34.0" prefHeight="200.0" prefWidth="810.0" styleClass="form_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                            <children>
+                        <AnchorPane prefWidth="810.0">
+                           <children>
+                                      <ComboBox fx:id="categoryComboBox" prefWidth="790.0" promptText="Select Category" styleClass="input_field" visibleRowCount="5" />
+                              <TextField fx:id="searchCategoryTextField" prefHeight="35.0" prefWidth="762.0" promptText="Select Category" styleClass="input_field_custom" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                                <HBox prefHeight="35.2" prefWidth="799.0">
+                                    <children>
+                                        <TextField fx:id="rfidTextField" prefWidth="390.0" promptText="RFID" styleClass="input_field">
+                                            <HBox.margin>
+                                                <Insets right="10.0" />
+                                            </HBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="barcodeTextField" prefWidth="390.0" promptText="Barcode" styleClass="input_field">
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                        </TextField>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="10.0" right="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox prefHeight="40.0" prefWidth="810.0">
+                                    <children>
+                                        <CheckBox fx:id="rfidCheckBox" mnemonicParsing="false" text="RFID">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                            </HBox.margin>
+                                        </CheckBox>
+                                        <CheckBox fx:id="barcodeCheckBox" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Barcode">
+                                            <HBox.margin>
+                                                <Insets left="20.0" top="10.0" />
+                                            </HBox.margin>
+                                        </CheckBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </HBox>
+                        <AnchorPane layoutX="21.0" layoutY="21.0" prefWidth="810.0">
+                           <children>
+                              <ComboBox fx:id="parentAssetComboBox" prefWidth="790.0" promptText="Select Category" styleClass="input_field" visibleRowCount="5" />
+                              <TextField fx:id="searchParentAssetTextField" prefHeight="35.0" prefWidth="762.0" promptText="Select Category" styleClass="input_field_custom" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                                <Label text="Parent asset must be in the selected category and located within the Warehouse">
+                                    <VBox.margin>
+                                        <Insets left="10.0" top="5.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <TextField fx:id="nameTextField" promptText="Name" styleClass="input_field">
+                                    <VBox.margin>
+                                        <Insets left="10.0" right="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="serialNumberTextField" layoutX="12.0" layoutY="207.0" promptText="Serial Number" styleClass="input_field">
+                                    <VBox.margin>
+                                        <Insets left="10.0" right="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="descriptionTextField" layoutX="12.0" layoutY="232.0" promptText="Description" styleClass="input_field">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </TextField>
+                            </children>
+                        </VBox>
+                    </AnchorPane>
+                </children>
+            </VBox>
+        </children>
+    </VBox>
+    <VBox fx:id="step2VBox" layoutX="30.0" layoutY="170.0" prefHeight="200.0" prefWidth="100.0" visible="false" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="210.0">
+        <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+                <children>
+                    <AnchorPane prefHeight="377.0" prefWidth="810.0" stylesheets="@../Styles/FormInput.css">
+                        <children>
+                            <HBox prefHeight="50.0" prefWidth="810.0" styleClass="container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <children>
+                                    <Label styleClass="step_title" text="Basic Info">
+                                        <graphic>
+                                            <FontAwesomeIconView glyphName="CIRCLE" />
+                                        </graphic>
+                                    </Label>
+                                    <Line endX="100.0" strokeWidth="2.0">
+                                        <HBox.margin>
+                                            <Insets top="8.0" />
+                                        </HBox.margin>
+                                    </Line>
+                                    <Label layoutX="10.0" layoutY="10.0" styleClass="step_title" text="Depreciation Info" textFill="#edae1f">
+                                        <graphic>
+                                            <FontAwesomeIconView fill="#edae1f" glyphName="CIRCLE" />
+                                        </graphic>
+                                    </Label>
+                                    <Line endX="100.0" layoutX="178.0" layoutY="11.0" strokeWidth="2.0">
+                                        <HBox.margin>
+                                            <Insets top="8.0" />
+                                        </HBox.margin>
+                                    </Line>
+                                    <Label layoutX="38.0" layoutY="10.0" styleClass="step_title" text="Maintenance Info">
+                                        <graphic>
+                                            <FontAwesomeIconView glyphName="CIRCLE" />
+                                        </graphic>
+                                    </Label>
+                                    <Line startX="100.0" strokeWidth="2.0">
+                                        <HBox.margin>
+                                            <Insets top="8.0" />
+                                        </HBox.margin>
+                                    </Line>
+                                    <Label layoutX="66.0" layoutY="10.0" styleClass="step_title" text="Preview">
+                                        <graphic>
+                                            <FontAwesomeIconView glyphName="CIRCLE" />
+                                        </graphic>
+                                        <HBox.margin>
+                                            <Insets />
+                                        </HBox.margin>
+                                    </Label>
+                                </children>
+                            </HBox>
+                            <VBox layoutY="34.0" prefHeight="200.0" prefWidth="810.0" styleClass="form_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                                <children>
+                                    <HBox layoutX="21.0" layoutY="64.0" prefHeight="35.2" prefWidth="799.0">
+                                        <children>
+                                            <TextField fx:id="originalCostTextField" prefWidth="390.0" promptText="Original Cost" styleClass="input_field">
+                                                <HBox.margin>
+                                                    <Insets right="10.0" />
+                                                </HBox.margin>
+                                            </TextField>
+                                            <ComboBox fx:id="currencyComboBox" prefWidth="390.0" promptText="Currency" styleClass="input_field">
+                                                <HBox.margin>
+                                                    <Insets />
+                                                </HBox.margin>
+                                            </ComboBox>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="35.2" prefWidth="799.0">
+                                        <children>
+                                            <TextField fx:id="depreciationTimeTextField" prefWidth="390.0" promptText="Depreciation Time" styleClass="input_field">
+                                                <HBox.margin>
+                                                    <Insets right="10.0" />
+                                                </HBox.margin>
+                                            </TextField>
+                                            <ComboBox fx:id="timeRangeComboBox" prefWidth="390.0" promptText="Time range" styleClass="input_field">
+                                                <HBox.margin>
+                                                    <Insets />
+                                                </HBox.margin>
+                                            </ComboBox>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets left="10.0" right="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                                    <DatePicker fx:id="depreciationStartDateDatePicker" prefWidth="790.0" promptText="Depreciation Start Date" styleClass="input_field">
+                                        <VBox.margin>
+                                            <Insets left="10.0" top="10.0" />
+                                        </VBox.margin>
+                                    </DatePicker>
+                                    <ComboBox fx:id="depreciationPolicyComboBox" layoutX="21.0" layoutY="21.0" prefWidth="790.0" promptText="Depreciation Policy" styleClass="input_field">
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" left="10.0" top="10.0" />
+                                        </VBox.margin>
+                                    </ComboBox>
+                                </children>
+                            </VBox>
+                        </children>
+                    </AnchorPane>
+                </children>
+            </VBox>
+        </children>
+    </VBox>
+    <VBox fx:id="step3VBox" layoutX="30.0" layoutY="170.0" prefHeight="200.0" prefWidth="100.0" visible="false" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="210.0">
+        <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+                <children>
+                    <AnchorPane prefHeight="377.0" prefWidth="810.0" stylesheets="@../Styles/FormInput.css">
+                        <children>
+                            <HBox prefHeight="50.0" prefWidth="810.0" styleClass="container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <children>
+                                    <Label styleClass="step_title" text="Basic Info">
+                                        <graphic>
+                                            <FontAwesomeIconView glyphName="CIRCLE" />
+                                        </graphic>
+                                    </Label>
+                                    <Line endX="100.0" strokeWidth="2.0">
+                                        <HBox.margin>
+                                            <Insets top="8.0" />
+                                        </HBox.margin>
+                                    </Line>
+                                    <Label layoutX="10.0" layoutY="10.0" styleClass="step_title" text="Depreciation Info">
+                                        <graphic>
+                                            <FontAwesomeIconView glyphName="CIRCLE" />
+                                        </graphic>
+                                    </Label>
+                                    <Line endX="100.0" layoutX="178.0" layoutY="11.0" strokeWidth="2.0">
+                                        <HBox.margin>
+                                            <Insets top="8.0" />
+                                        </HBox.margin>
+                                    </Line>
+                                    <Label layoutX="38.0" layoutY="10.0" styleClass="step_title" text="Maintenance Info" textFill="#edae1f">
+                                        <graphic>
+                                            <FontAwesomeIconView fill="#edae1f" glyphName="CIRCLE" />
+                                        </graphic>
+                                    </Label>
+                                    <Line startX="100.0" strokeWidth="2.0">
+                                        <HBox.margin>
+                                            <Insets top="8.0" />
+                                        </HBox.margin>
+                                    </Line>
+                                    <Label layoutX="66.0" layoutY="10.0" styleClass="step_title" text="Preview">
+                                        <graphic>
+                                            <FontAwesomeIconView glyphName="CIRCLE" />
+                                        </graphic>
+                                        <HBox.margin>
+                                            <Insets />
+                                        </HBox.margin>
+                                    </Label>
+                                </children>
+                            </HBox>
+                            <VBox layoutY="34.0" prefHeight="100.0" prefWidth="810.0" styleClass="form_container" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                                <children>
+                                    <DatePicker fx:id="startedMaintenanceDate" prefWidth="790.0" promptText="Started Maintenance Date" styleClass="input_field">
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" left="10.0" top="10.0" />
+                                        </VBox.margin>
+                                    </DatePicker>
+                                    <HBox prefHeight="35.2" prefWidth="799.0">
+                                        <children>
+                                            <TextField fx:id="maintenanceTimeTextField" prefWidth="390.0" promptText="Maintenance Time" styleClass="input_field">
+                                                <HBox.margin>
+                                                    <Insets right="10.0" />
+                                                </HBox.margin>
+                                            </TextField>
+                                            <ComboBox fx:id="maintenanceTimeComboBox" prefWidth="390.0" promptText="Time Range" styleClass="input_field">
+                                                <HBox.margin>
+                                                    <Insets />
+                                                </HBox.margin>
+                                            </ComboBox>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets left="10.0" right="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                        </children>
+                    </AnchorPane>
+                </children>
+            </VBox>
+        </children>
+    </VBox>
+    <VBox fx:id="step4VBox" layoutX="30.0" layoutY="170.0" prefHeight="200.0" prefWidth="100.0" visible="false" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="210.0">
+        <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+                <children>
+                    <AnchorPane prefHeight="377.0" prefWidth="810.0" stylesheets="@../Styles/FormInput.css">
+                        <children>
+                            <HBox prefHeight="50.0" prefWidth="810.0" styleClass="container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <children>
+                                    <Label styleClass="step_title" text="Basic Info">
+                                        <graphic>
+                                            <FontAwesomeIconView glyphName="CIRCLE" />
+                                        </graphic>
+                                    </Label>
+                                    <Line endX="100.0" strokeWidth="2.0">
+                                        <HBox.margin>
+                                            <Insets top="8.0" />
+                                        </HBox.margin>
+                                    </Line>
+                                    <Label layoutX="10.0" layoutY="10.0" styleClass="step_title" text="Depreciation Info">
+                                        <graphic>
+                                            <FontAwesomeIconView glyphName="CIRCLE" />
+                                        </graphic>
+                                    </Label>
+                                    <Line endX="100.0" layoutX="178.0" layoutY="11.0" strokeWidth="2.0">
+                                        <HBox.margin>
+                                            <Insets top="8.0" />
+                                        </HBox.margin>
+                                    </Line>
+                                    <Label layoutX="38.0" layoutY="10.0" styleClass="step_title" text="Maintenance Info">
+                                        <graphic>
+                                            <FontAwesomeIconView glyphName="CIRCLE" />
+                                        </graphic>
+                                    </Label>
+                                    <Line startX="100.0" strokeWidth="2.0">
+                                        <HBox.margin>
+                                            <Insets top="8.0" />
+                                        </HBox.margin>
+                                    </Line>
+                                    <Label layoutX="66.0" layoutY="10.0" styleClass="step_title" text="Preview" textFill="#edae1f">
+                                        <graphic>
+                                            <FontAwesomeIconView fill="#edae1f" glyphName="CIRCLE" />
+                                        </graphic>
+                                        <HBox.margin>
+                                            <Insets />
+                                        </HBox.margin>
+                                    </Label>
+                                </children>
+                            </HBox>
+                            <VBox layoutY="34.0" prefHeight="200.0" prefWidth="810.0" styleClass="form_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                                <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                        <children>
+                                            <AnchorPane prefHeight="28.0" prefWidth="230.0">
+                                                <children>
+                                                    <Label text="Category:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="categoryText" layoutX="67.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="67.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                                <HBox.margin>
+                                                    <Insets left="10.0" />
+                                                </HBox.margin>
+                                            </AnchorPane>
+                                            <AnchorPane layoutX="20.0" layoutY="10.0" prefHeight="28.0" prefWidth="319.0">
+                                                <children>
+                                                    <Label text="Original Cost:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="originalCostText" layoutX="93.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="93.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                                <HBox.margin>
+                                                    <Insets right="10.0" />
+                                                </HBox.margin>
+                                            </AnchorPane>
+                                            <AnchorPane layoutX="548.0" layoutY="10.0" prefHeight="29.0" prefWidth="319.0">
+                                                <children>
+                                                    <Label text="Maintenance Started Date:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="maintenanceStartedText" layoutX="179.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="179.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                            </AnchorPane>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" top="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="11.0" layoutY="21.0" prefHeight="100.0" prefWidth="200.0">
+                                        <children>
+                                            <AnchorPane prefHeight="28.0" prefWidth="230.0">
+                                                <children>
+                                                    <Label text="Parent:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="parentText" layoutX="50.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="50.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                                <HBox.margin>
+                                                    <Insets left="10.0" />
+                                                </HBox.margin>
+                                            </AnchorPane>
+                                            <AnchorPane layoutX="20.0" layoutY="10.0" prefHeight="28.0" prefWidth="319.0">
+                                                <children>
+                                                    <Label text="Depreciation Time:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="depreciationTimeText" layoutX="128.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="128.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                                <HBox.margin>
+                                                    <Insets right="10.0" />
+                                                </HBox.margin>
+                                            </AnchorPane>
+                                            <AnchorPane layoutX="548.0" layoutY="10.0" prefHeight="27.0" prefWidth="318.0">
+                                                <children>
+                                                    <Label text="Maintenance Time:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="maintenanceTimeText" layoutX="129.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="129.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                            </AnchorPane>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="11.0" layoutY="59.0" prefHeight="27.0" prefWidth="200.0">
+                                        <children>
+                                            <AnchorPane prefHeight="28.0" prefWidth="204.0">
+                                                <children>
+                                                    <Label text="Name:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="nameText" layoutX="46.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="46.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                                <HBox.margin>
+                                                    <Insets left="10.0" />
+                                                </HBox.margin>
+                                            </AnchorPane>
+                                            <AnchorPane layoutX="20.0" layoutY="10.0" prefHeight="28.0" prefWidth="319.0">
+                                                <children>
+                                                    <Label text="Depreciation Start Date:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="depreciationStartText" layoutX="162.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="159.20000000000005" AnchorPane.leftAnchor="162.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                            </AnchorPane>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="11.0" layoutY="96.0" prefHeight="27.0" prefWidth="200.0">
+                                        <children>
+                                            <AnchorPane prefHeight="28.0" prefWidth="204.0">
+                                                <children>
+                                                    <Label text="Rfid:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="rfidText" layoutX="34.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="34.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                                <HBox.margin>
+                                                    <Insets left="10.0" />
+                                                </HBox.margin>
+                                            </AnchorPane>
+                                            <AnchorPane layoutX="20.0" layoutY="10.0" prefHeight="28.0" prefWidth="319.0">
+                                                <children>
+                                                    <Label text="Depreciation Policy:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="depreciationPolicyText" layoutX="135.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="176.0" AnchorPane.leftAnchor="135.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                            </AnchorPane>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="11.0" layoutY="172.0" prefHeight="27.0" prefWidth="200.0">
+                                        <children>
+                                            <AnchorPane prefHeight="28.0" prefWidth="240.0">
+                                                <children>
+                                                    <Label text="Barcode:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="barCodeText" layoutX="61.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="61.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                                <HBox.margin>
+                                                    <Insets left="10.0" />
+                                                </HBox.margin>
+                                            </AnchorPane>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="11.0" layoutY="274.0" prefHeight="27.0" prefWidth="200.0">
+                                        <children>
+                                            <AnchorPane prefHeight="28.0" prefWidth="240.0">
+                                                <children>
+                                                    <Label text="Serial Number:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="serialNumberText" layoutX="101.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="101.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                                <HBox.margin>
+                                                    <Insets left="10.0" />
+                                                </HBox.margin>
+                                            </AnchorPane>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="11.0" layoutY="172.0" prefHeight="27.0" prefWidth="200.0">
+                                        <children>
+                                            <AnchorPane prefHeight="28.0" prefWidth="240.0">
+                                                <children>
+                                                    <Label text="Description:">
+                                                        <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <Text fx:id="descriptionText" layoutX="83.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="83.0">
+                                                        <font>
+                                                            <Font size="14.0" />
+                                                        </font>
+                                                    </Text>
+                                                </children>
+                                                <HBox.margin>
+                                                    <Insets left="10.0" />
+                                                </HBox.margin>
+                                            </AnchorPane>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="11.0" layoutY="228.0" prefHeight="27.0" prefWidth="200.0" />
+                                </children>
+                            </VBox>
+                        </children>
+                    </AnchorPane>
+                </children>
+            </VBox>
+        </children>
+    </VBox>
+    <AnchorPane fx:id="buttonAnchorPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="570.0">
+        <children>
+            <Button fx:id="backButton" mnemonicParsing="false" style="-fx-background-color: #edae1f;" textFill="#ffb514" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                <graphic>
+                    <FontAwesomeIconView glyphName="ARROW_CIRCLE_LEFT" size="15" text=" Back" />
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+            <Button fx:id="nextButton" mnemonicParsing="false" style="-fx-background-color: #edae1f;" textFill="#ffb514" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                <graphic>
+                    <FontAwesomeIconView glyphName="ARROW_CIRCLE_RIGHT" size="15" text="Next " />
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+            <Button fx:id="completeButton" layoutX="757.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: #edae1f;" textFill="#ffb514" visible="false" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                <graphic>
+                    <FontAwesomeIconView glyphName="CHECK" size="15" text="Complete " />
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+        </children>
+    </AnchorPane>
+   <Text fx:id="deviceText" layoutX="652.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="status_device" text="Not connected to a device" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="175.4609375" />
+</AnchorPane>

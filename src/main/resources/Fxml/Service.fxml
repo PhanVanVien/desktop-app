@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" stylesheets="@../Styles/Home.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.beetechdesktopapp.Controllers.ServiceController">
+    <AnchorPane layoutX="33.0" layoutY="33.0" prefHeight="100.0" prefWidth="850.0" styleClass="header_dashboard" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Text layoutX="65.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="page_title" text="Service" wrappingWidth="127.81705856323242" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="28.0" />
+    </AnchorPane>
+    <Label layoutX="729.0" layoutY="112.0" styleClass="date-lbl" text="Today, 2023-08-10" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="112.0" />
+    <Text layoutX="35.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="username" text="Hi, Beetech" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="115.0" />
+</AnchorPane>

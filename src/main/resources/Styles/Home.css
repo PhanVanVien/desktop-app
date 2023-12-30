@@ -1,0 +1,77 @@
+.transaction_form_container Text {
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+}
+
+.header_dashboard {
+    -fx-background-color: #000000;
+}
+
+.page_title {
+    -fx-font-size: 2.5em;
+    -fx-font-weight: bold;
+    -fx-fill: #EDAE1F;
+    -fx-text-alignment: center;
+}
+
+.username {
+    -fx-font-size: 2.6em;
+    -fx-font-family: "Calibri Light";
+}
+
+.date-lbl {
+    -fx-text-fill: #AAAAAA;
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Calibri Light";
+}
+
+.transaction_form_container {
+    -fx-spacing: 5;
+}
+
+.transaction_form_container Text {
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+}
+
+.table-view {
+    -fx-background-color:#EDAE1F;
+    -fx-background-radius: 5 5 0 0;
+
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #EDAE1F;
+    -fx-background-radius:5;
+    /*            -fx-background-insets: 0 0 10 0;*/
+}
+
+.table-view .column-header, .table-view .filler{
+    -fx-size:50px;
+    -fx-border-width: 0 0 10 0;
+    -fx-background-color:transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: black;
+}
+
+.summary_view {
+    -fx-background-color: black;
+    -fx-padding: 5 10 5 10;
+    -fx-spacing: 0;
+    -fx-alignment: center_left;
+    -fx-background-radius: 5;
+    /*    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 10, 0, 0, 10);*/
+}
+
+.summary_view Label {
+    -fx-font-size: 1.1em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #EDAE1F;
+}
+
+.summary_view Text {
+    -fx-font-size: 1.6em;
+    -fx-fill: #EDAE1F;
+}

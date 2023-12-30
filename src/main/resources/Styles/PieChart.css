@@ -1,0 +1,35 @@
+.chart {
+    -fx-legend-side: right;
+    -fx-start-angle: 90;
+}
+
+.chart-title {
+    -fx-padding: 0 0 0 0; /* Adjust the top and bottom padding to reduce margin */
+    -fx-margin: 0;
+    -fx-spacing: 0;
+}
+
+.chart-pie-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 1.0em;
+}
+
+.chart-content {
+    -fx-padding: 5;
+}
+
+.chart-legend-item {
+    -fx-alignment: center-left; /* Set alignment to center-left */
+}
+
+.default-color0.chart-pie {
+    -fx-pie-color: #9C7E3C;
+}
+
+.default-color1.chart-pie {
+    -fx-pie-color: #685428;
+}
+
+.default-color2.chart-pie {
+    -fx-pie-color: #EABE5A;
+}
