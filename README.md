@@ -10,8 +10,7 @@ Instead, I simply scan the tags using the connected device, and the correspondin
 
 <hr/>
 <h2 align="center">Preview</h2>
-I obfuscate certain information to safeguard enterprise data</p>
-All the data is fetched via an API designed by my colleagues. I retrieve the data and implement pagination. Furthermore, I have added a search feature.
+I obfuscate certain information to safeguard enterprise data. All the data is fetched via an API designed by my colleagues. I retrieve the data and implement pagination. Furthermore, I have added a search feature.
 
 **Login Form**
 
