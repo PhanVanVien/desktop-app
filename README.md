@@ -8,7 +8,6 @@ Description:
 
 Preview
 - Login Form
-<br/>
 ![image](https://github.com/PhanVanVien/desktop-app/assets/84467489/34d971af-b58f-462f-95b9-6d56b141ed04)
 
 - Tab Home
