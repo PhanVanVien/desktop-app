@@ -40,7 +40,7 @@ Instead, I simply scan the tags using the connected device, and the correspondin
   
 </p>
 
-**Tab Asset/Add**
+**Tab Asset/Add:**
 In this tab, there are features to connect Bluetooth with a device. Upon successful connection, it will display the name of the device. Additionally, the feature retrieves information about merchandise when I use a merchandise tag scanned through the device. This form will display information about the merchandise.
 
 <p align="center">
