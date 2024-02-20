@@ -6,19 +6,19 @@ Description:
 - By connecting the RFID device to my application, I eliminated the need to manually input RFID codes for each item.
 - Instead, I simply scan the tags using the connected device, and the corresponding RFID codes effortlessly populate the information tab for the asset.
 
-Preview
+Preview:
 - Login Form
 
 ![image](https://github.com/PhanVanVien/desktop-app/assets/84467489/34d971af-b58f-462f-95b9-6d56b141ed04)
 
 - Tab Home
-<br/>
+
 ![home_tab](https://github.com/PhanVanVien/desktop-app/assets/84467489/07871659-9831-4331-80be-d682a4537a62)
 
 - Tab Category
-<br/>
+
 ![category_tab](https://github.com/PhanVanVien/desktop-app/assets/84467489/c7287cc8-644d-46d7-b613-9770f4692bfe)
 
 - Tab Asset
-<br/>
+
 ![asset_tab](https://github.com/PhanVanVien/desktop-app/assets/84467489/9a977b01-334e-4225-92f3-7dcc7aa735c0)
