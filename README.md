@@ -9,7 +9,7 @@ Description:
 Preview:
 - Login Form
 
-<img src="[https://your-image-url.type](https://github.com/PhanVanVien/desktop-app/assets/84467489/34d971af-b58f-462f-95b9-6d56b141ed04)" width="100" height="100">
+<img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/34d971af-b58f-462f-95b9-6d56b141ed04" width="100" height="100">
 ![image](https://github.com/PhanVanVien/desktop-app/assets/84467489/34d971af-b58f-462f-95b9-6d56b141ed04=250x250)
 
 - Tab Home
