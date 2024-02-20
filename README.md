@@ -22,3 +22,8 @@ Preview:
 - Tab Asset
 
 ![asset_tab](https://github.com/PhanVanVien/desktop-app/assets/84467489/9a977b01-334e-4225-92f3-7dcc7aa735c0)
+
+- Tab Asset/Add
+
+![image](https://github.com/PhanVanVien/desktop-app/assets/84467489/4dc7d576-d195-4b7e-b04f-e298bf7a8fc7)
+
