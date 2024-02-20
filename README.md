@@ -19,32 +19,32 @@ I obfuscate certain information to safeguard enterprise data. All the data is fe
   
 </p>
 
-**Tab Home**
+<h3>Tab Home</h3>
 
 <p align="center">
 <img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/07871659-9831-4331-80be-d682a4537a62" width="900">
   
 </p>
 
-**Tab Category**
+<h3>Tab Category</h3>
 
 <p align="center">
 <img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/c7287cc8-644d-46d7-b613-9770f4692bfe" width="900">
   
 </p>
 
-**Tab Asset**
+<h3>Tab Asset</h3>
 
 <p align="center">
 <img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/9a977b01-334e-4225-92f3-7dcc7aa735c0" width="900">
   
 </p>
 
-**Tab Asset/Add:**
+<p>Tab Asset/Add</p>
 In this tab, there are features to connect Bluetooth with a device. Upon successful connection, it will display the name of the device. Additionally, the feature retrieves information about merchandise when I use a merchandise tag scanned through the device. This form will display information about the merchandise.
 
 <p align="center">
 <img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/4dc7d576-d195-4b7e-b04f-e298bf7a8fc7" width="900">
-  
+
 </p>
 
