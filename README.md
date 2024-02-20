@@ -13,17 +13,17 @@ Preview:
 
 - Tab Home
 
-![home_tab](https://github.com/PhanVanVien/desktop-app/assets/84467489/07871659-9831-4331-80be-d682a4537a62)
+<img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/07871659-9831-4331-80be-d682a4537a62" width="750">
 
 - Tab Category
 
-![category_tab](https://github.com/PhanVanVien/desktop-app/assets/84467489/c7287cc8-644d-46d7-b613-9770f4692bfe)
+<img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/c7287cc8-644d-46d7-b613-9770f4692bfe" width="750">
 
 - Tab Asset
 
-![asset_tab](https://github.com/PhanVanVien/desktop-app/assets/84467489/9a977b01-334e-4225-92f3-7dcc7aa735c0)
+<img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/9a977b01-334e-4225-92f3-7dcc7aa735c0" width="750">
 
 - Tab Asset/Add
 
-![image](https://github.com/PhanVanVien/desktop-app/assets/84467489/4dc7d576-d195-4b7e-b04f-e298bf7a8fc7)
+<img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/4dc7d576-d195-4b7e-b04f-e298bf7a8fc7" width="750">
 
