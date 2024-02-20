@@ -12,7 +12,7 @@ Instead, I simply scan the tags using the connected device, and the correspondin
 <h2 align="center">Preview</h2>
 I obfuscate certain information to safeguard enterprise data. All the data is fetched via an API designed by my colleagues. I retrieve the data and implement pagination. Furthermore, I have added a search feature.
 
-**Login Form**
+<h3>Login Form</h3>
 
 <p align="center">
 <img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/34d971af-b58f-462f-95b9-6d56b141ed04" width="500" >
