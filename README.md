@@ -11,6 +11,7 @@ Instead, I simply scan the tags using the connected device, and the correspondin
 <hr/>
 <h2 align="center">Preview</h2>
 <p align="center">I obfuscate certain information to safeguard enterprise data</p>
+
 **Login Form**
 
 <p align="center">
