@@ -1,4 +1,4 @@
-![image](https://github.com/PhanVanVien/desktop-app/assets/84467489/e76b5834-7b61-4f39-9b87-a6da3241f346)![image](https://github.com/PhanVanVien/desktop-app/assets/84467489/9b8b04a4-07df-4d64-a6a5-95fbd1457855)Description:
+Description:
 - In my JavaFx project, I seamlessly integrated API calls to retrieve data from my colleague's backend.
 - The user interface, crafted using SceneBuilder, boasts a polished appearance achieved through CSS styling.
 - A notable feature of my application involves interaction with a CAEN RFID device.
