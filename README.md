@@ -11,35 +11,35 @@ Instead, I simply scan the tags using the connected device, and the correspondin
 <hr/>
 <h2 align="center">Preview</h2>
 
-- Login Form **bold text**.
+**Login Form**.
 
 <p align="center">
 <img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/34d971af-b58f-462f-95b9-6d56b141ed04" width="500" >
   
 </p>
 
-- Tab Home
+**Tab Home**
 
 <p align="center">
 <img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/07871659-9831-4331-80be-d682a4537a62" width="900">
   
 </p>
 
-- Tab Category
+**Tab Category**
 
 <p align="center">
 <img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/c7287cc8-644d-46d7-b613-9770f4692bfe" width="900">
   
 </p>
 
-- Tab Asset
+**Tab Asset**
 
 <p align="center">
 <img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/9a977b01-334e-4225-92f3-7dcc7aa735c0" width="900">
   
 </p>
 
-- Tab Asset/Add
+**Tab Asset/Add**
 
 <p align="center">
 <img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/4dc7d576-d195-4b7e-b04f-e298bf7a8fc7" width="900">
