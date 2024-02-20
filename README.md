@@ -8,6 +8,7 @@
 - Instead, I simply scan the tags using the connected device, and the corresponding RFID codes effortlessly populate the information tab for the asset.
 <hr/>
 <h2 align="center">Preview</h2>
+
 - Login Form
 
 <img src="https://github.com/PhanVanVien/desktop-app/assets/84467489/34d971af-b58f-462f-95b9-6d56b141ed04" width="500" >
