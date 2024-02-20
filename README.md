@@ -40,7 +40,7 @@ I obfuscate certain information to safeguard enterprise data. All the data is fe
   
 </p>
 
-<p>Tab Asset/Add</p>
+<h3>Tab Asset/Add</h3>
 In this tab, there are features to connect Bluetooth with a device. Upon successful connection, it will display the name of the device. Additionally, the feature retrieves information about merchandise when I use a merchandise tag scanned through the device. This form will display information about the merchandise.
 
 <p align="center">
