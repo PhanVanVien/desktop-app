@@ -6,6 +6,9 @@
 
 <hr/>
 <h2 align="center">Preview</h2>
+<p align="center">
+I obfuscate certain information to safeguard enterprise data. All the data is fetched via an API designed by my colleagues. I retrieve the data and implement pagination. Furthermore, I have added a search feature.    
+</p>
 
 <h3 align="center">Login Form</h3>
 <p align="center">
